@@ -57,7 +57,9 @@ function getArrayLength(array) {
  *  getFirstElementOfArray([ 10, 20, 30 ]);
  *  //> 10
  */
-function getFirstElementOfArray(array) {}
+function getFirstElementOfArray(array) {
+
+}
 
 /**
  * getLastElementOfArray()
@@ -141,7 +143,9 @@ function removeElementFromFrontOfArray(array) {}
  *  getMiddleElement([ 10, null, "30" ]);
  *  //> null
  */
-function getMiddleElement(array) {}
+function getMiddleElement(array) {
+  return array[Math.ceil((array.length/2)-1)]
+}
 
 // Do not change any code below this line.
 module.exports = {
