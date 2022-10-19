@@ -159,6 +159,21 @@ function findEqual(array, selected) {
   }
     return false
   } 
+  // let i = 0 
+  // while (i < array.length){
+  //   if(array[i] === target){
+  //     return true
+  //   } 
+  //   i++
+  //   }
+  //   return false
+  //or you can do 
+  // for (let i = 0;i < array.length; i++){
+  //   if(array[i]===selected){
+  //     return true
+  //   } 
+  // }
+  //   return false
 /**
  * removeDuplicates()
  * ---------------------
