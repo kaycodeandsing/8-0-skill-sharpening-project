@@ -40,7 +40,9 @@ function applyDiscount(priceInCents, age, hasMembership) {}
     getCartTotal(cart);
  *  //> "$30.00"
  */
-function getCartTotal(products) {}
+function getCartTotal(products) {
+
+}
 
 /**
  * compareLocations()
@@ -152,7 +154,20 @@ function gradeAssignments(assignments) {}
     createLineOrder(people);
     //> [ "Ray Anderson", "America Marsh", "Wade Carson", "Patience Patel" ]
  */
-function createLineOrder(people) {}
+function createLineOrder(people) {
+  let result = []
+  for (let i = 0; i <people.length; i++){
+    if (people[i].hasMembership === true){
+      result.push(people[i].name)
+    }
+  } for (let i = 0; i<people.length; i++){
+    if (people[i].hasMembership !== true){
+      result.push(people[i].name)
+    }
+    
+  }return result
+
+}
 
 module.exports = {
   applyDiscount,
